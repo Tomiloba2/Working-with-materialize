@@ -5,114 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="materialize-v1.0.0/materialize/css/materialize.min.css">
-    <title>four Card feature section</title>
+    <title>Pricing toggle Component</title>
     <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .card{
-            background-color: whitesmoke;
-            border-radius: 30px;
-        }
-        #top{
-            position: relative;
-            top: clamp(0vw,5vw,15vw);
-        }
-        #bottom{
-            position: relative;
-            bottom: clamp(0vw,5vw,12vw);
-        }
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .container{
+    margin: 2vw 10vw;
+    }
+    .preview{
+      margin-bottom: 2vw;
+    }
+    .btn{
+      margin: 1vw 0vw;
+      border-radius: 20px;
+    }
+    .btn:hover{
+      background-color: white;
+      color: purple;
+    }
     </style>
 </head>
 <body>
-    <section class="container">
-        <article id="first" class="center">
-            <h3 class="grey-text">Reliable Efficient delivery</h3>
-            <h2>Powered by Technology</h2>
-            <p class="grey-text">
-                Our Artificial Intelligence powered tools use millions pf project data<br>
-                points to ensure that your project is successful
-            </p>
-        </article>
-        <article id="second">
-            <main class="row">
-                <div class="col s0 m3 l4"></div>
-            <div class="col s12 m6 l4 card" id="top">
-                <div class="card-content">
-                    <div>
-                        <img src="Asset/fash4.jpg" alt="fash4" class=" card-image responsive-img">
-                    </div>
-                    <div >
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
-                            ossimus dolorum molestiae nulla odit sed saepe<br>
-                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
-                              Similique a eveniet laboriosam ipsam unde!
-                        </p>
-                    </div>
-                </div>
+  <section class="container card-panel">
+      <main class="preview center">
+          <h2>Our Pricing</h2>
+          <form action="#">
+            <div class="switch">
+              <label>
+                Annually
+                <input type="checkbox">
+                <span class="lever"></span>
+                Monthly
+              </label>
             </div>
-            <div class="col s0 m3 l4"></div>
-            </main>
-            <!--end of first card-->
-            <main class="row">
-            <div class="col s12 m4 l3 card">
-                <div class="card-content">
-                    <div>
-                        <img src="Asset/fash3.jpg" alt="fash3"  class="card-image responsive-img">
-                    </div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
-                            ossimus dolorum molestiae nulla odit sed saepe<br>
-                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
-                              Similique a eveniet laboriosam ipsam unde!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s0 m4 l6"></div>
-            <!--end of second card-->
-            <div class="col s12 m4 l3 card">
-                <div class="card-content">
-                    <div>
-                        <img src="Asset/fash1.jpg" alt="fash1"  class="card-image responsive-img">
-                    </div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
-                            ossimus dolorum molestiae nulla odit sed saepe<br>
-                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
-                              Similique a eveniet laboriosam ipsam unde!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            </main>
-            <!--end of thrid card-->
-            <main class="row">
-                <div class="col s0 m3 l4"></div>
-            <div class="col s12 col m6 l4 card" id="bottom">
-                <div class="card-content">
-                    <div>
-                        <img src="Asset/fash7.jpg" alt="fash7"  class="card-image responsive-img">
-                    </div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
-                            ossimus dolorum molestiae nulla odit sed saepe<br>
-                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
-                              Similique a eveniet laboriosam ipsam unde!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s0 m3 l4"></div>
-            </main>
-            <!--end of fourth card-->
-        </article>
-    </section>
+          </form>
+      </main>
+      <div class="grid row">
+      <article class="first col s12 m4 l4 card center">
+          <p>BASIC</p>
+          <h3>$<span>19.99</span></h3>
+             <br>
+             <hr style="color:white;">
+          <p>500GB storage</p><br><hr style="color:white;">
+          <p>2 Users Allowed</p><br><hr style="color:white;">
+          <p>Send up to 3GB</p><br><hr style="color:white;">
+          <button class="btn purple white-text ">Learn more</button>
+      </article>
+      <article class="second col s12 m4 l4 card center purple white-text">
+          <p>PROFESSIONAL</p>
+          <h3>$<span>29.99</span></h3>
+             <br>
+             <hr style="color:white;">
+          <p>1 TB storage</p><br><hr style="color:white;">
+          <p>5 Users Allowed</p><br><hr style="color:white;">
+          <p>Send up to 10GB</p><br><hr style="color:white;">
+          <button class="btn white purple-text">Learn more</button>
+      </article>
+      <article class="thrid col s12 m4 l4 card center">
+          <p>MASTER</p>
+          <h3>$<span>39.99</span></h3>
+             <br>
+             <hr style="color:white;">
+          <p>2 Tb storage</p><br><hr style="color:white;">
+          <p>10 Users Allowed</p><br><hr style="color:white;">
+          <p>Send up to 20GB</p><br><hr style="color:white;">
+          <button class="btn purple white-text">Learn more</button>
+      </article>
+      </div>
+  </section>
 </body>
 </html>

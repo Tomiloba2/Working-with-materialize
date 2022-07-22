@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="David"/>
+    <meta name="keywords" content="Photo-contact-form"/>
+    <meta name="description" content="A  simple Photo Album built with materialize css"/>
+    <link rel="stylesheet" href="materialize-v1.0.0/materialize/css/materialize.min.css">
+    <title>Photo contact form</title>
+    <style media="screen">
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper  white-text blue static">
+          <label class="brand-logo white-text">
+            Photo-gallery
+          </label>
+          <a href="#" class="sidenav-trigger" data-target='mobile'>
+            <img src="Asset\menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="Photo-gallery.html" class="white-text">Explore images</a>
+            </li>
+            <li>
+              <a href="Photo-form.html" class="green-text  white active">Sign-up</a>
+            </li>
+          </ul>
+          <ul class="sidenav blue" id="mobile">
+            <li>
+              <a href="Photo-gallery.html" class="white-text">Explore images</a>
+            </li>
+            <li>
+              <a href="Photo-form.html" class="green-text white active">Sign-up</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main class="container center blue-text">
+      <div>
+        <h3>PhotoAlbum</h3>
+        <p class="container">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        </p>
+    </div>
+    <div class="container">
+      <section class="row">
+        <section class="col s12 m6 l6 card-panel">
+            <div class="container">
+            <i class="material-icons">message</i>
+            <h3>
+                Sign-up to our weekly news letter
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+            </div>
+        </section>
+        <section class="col s12 m6 l6 card-panel push-m1 push-l1">
+            <form action="index.html">
+                <div class="input-field">
+                    <input type="text" id="username" required/>
+                    <label for="username">User-Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" required/>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="pswd" required/>
+                    <label for="pswd">Password</label>
+                </div>
+                <div class="input-field">
+                    <p>
+                        <label>
+                    <input type="checkbox" id="pswd" class="with-gap"/>
+                    <span>Forgot password</span>
+                        </label>
+                   </p>
+                </div>
+                <div class="input-field">
+                    <button class="btn green white-text" style="border-radius: 20px; width:16vw;">Submit</button>
+                </div>
+            </form>
+        </section>
+      </section>
+      </div>
+      </main>
+      <footer class="age-footer grey center white-text">
+        <div class="brand-logo white-text flow-text">
+          Photo-gallery
+        </div>
+        <div class="footer-copywright center-align">
+          &copy;2022 PhotoAlbum
+        </div>
+      </footer>
+      <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+      </script>
+      </body>
+      </html>
